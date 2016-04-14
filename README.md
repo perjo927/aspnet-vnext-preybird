@@ -9,10 +9,10 @@ Or basically follow [this guide](https://azure.microsoft.com/sv-se/documentation
 *   Node.js
 *   .NET Version Manager (DNVM)
     *   run the following commands:
-    1. `@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"`  
-    2. `dnvm upgrade`
+        1. `@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"`  
+        2. `dnvm upgrade`
 *   NuGet package restore (DNU)
-    `dnu restore`
+    * `dnu restore`
 
 ### Launch application
 *   run `dnx web`
