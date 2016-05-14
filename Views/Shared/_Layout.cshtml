@@ -9,10 +9,8 @@
         <title>@ViewData["Title"] - Programmer Per</title>
 
         <environment names="Development">
-            <!-- TODO: Get bundled CSS from lib too -->
             <link rel="stylesheet" href="~/css/site.css" />
 
-            <!-- Angular libraries. TODO: Bundle -->
             <script src="~/lib/es6-shim/es6-shim.min.js"></script>
             <script src="~/lib/systemjs/dist/system-polyfills.js"></script>
             <script src="~/lib/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
@@ -31,12 +29,34 @@
                         }
                     }
                 });
-                System.import('app/main').then(null, console.error.bind(console));
+                System.import('~/app/main').then(null, console.error.bind(console));
             </script>
         </environment>
 
         <environment names="Staging,Production">
             <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+            <!-- TODO: Bundle for production -->
+            <script src="~/lib/es6-shim.min.js"></script>
+            <script src="~/lib/system-polyfills.js"></script>
+            <script src="~/lib/shims_for_IE.js"></script>
+            <script src="~/lib/angular2-polyfills.js"></script>
+            <script src="~/lib/system.src.js"></script>
+            <script src="~/lib/Rx.js"></script>
+            <script src="~/lib/angular2.dev.js"></script>
+            <script src="~/lib/router.dev.js"></script>
+
+            <script>
+                System.config({
+                    packages: {
+                        app: {
+                            format: 'register',
+                            defaultExtension: 'js'
+                        }
+                    }
+                });
+                System.import('/app/main').then(null, console.error.bind(console));
+            </script>
         </environment>
     </head>
 
