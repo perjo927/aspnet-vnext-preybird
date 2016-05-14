@@ -34,7 +34,7 @@ var libs = [
 ];
 
 var app = [
-  npm + "ng2-preybird/dist/**/*"
+  npm + "ng2-preybird/dist-asp/**/*"
 ];
 
 gulp.task('copy:lib', function () {
