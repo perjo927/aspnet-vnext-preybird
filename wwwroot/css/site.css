@@ -1,24 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600);
+
+html {
+    font-size: 12px;
+}
+
+* {
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    background: #0b0b0b;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body, input[text], button {
+    color: #888;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+
+h1 {
+    color: #369;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+h2, h3, h4 {
+    color: #444;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
