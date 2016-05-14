@@ -14,6 +14,8 @@ Or basically follow [this guide](https://azure.microsoft.com/sv-se/documentation
         2. `dnvm upgrade`
 *   NuGet package restore (DNU)
     * `dnu restore`
+*   NPM restore 
+    * `npm install`    
 
 ### Launch application
 *   run `dnx web`
