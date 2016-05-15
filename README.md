@@ -22,7 +22,7 @@ Or basically follow [this guide](https://azure.microsoft.com/sv-se/documentation
 *   It should start on [localhost:5000](http://localhost:5000/)
 
 ### Angular 2 Integration
-*   There is a bower package that includes the Angular App (ng2-preybird)
+*   There is an npm package that includes the Angular App (ng2-preybird)
 *   Follow [this repo](https://github.com/perjo927/angular2-preybird/)
 
 ### Tests
