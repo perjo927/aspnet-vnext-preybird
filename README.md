@@ -25,6 +25,9 @@ Or basically follow [this guide](https://azure.microsoft.com/sv-se/documentation
 *   There is a bower package that includes the Angular App (ng2-preybird)
 *   Follow [this repo](https://github.com/perjo927/angular2-preybird/)
 
+### Tests
+TODO
+
 ## About
 *   I am **Per**, a programmer.
 *   I work for [Betsson](http://www.betssongroup.com/).
